@@ -38,7 +38,7 @@ const Hero = () => {
               </ScrollLink>
             </motion.button>
             <motion.button
-              className="bg-white text-green-600 px-6 py-3 rounded-md hover:bg-gray-200 cursor-pointer"
+              className="bg-white text-green-700 px-6 py-3 rounded-md hover:bg-gray-200 cursor-pointer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
