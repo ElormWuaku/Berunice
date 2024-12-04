@@ -79,7 +79,7 @@ const Contact = () => {
             {/* Call Button Added */}
             <motion.a
               href={`tel:${contactNumber}`}
-              className="w-full flex items-center justify-center bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-500 mb-6"
+              className="w-full flex items-center justify-center bg-green-700 text-white px-6 py-3 rounded-md hover:bg-green-600 mb-6"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
