@@ -1,3 +1,4 @@
+import { Element } from 'react-scroll';
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -7,28 +8,29 @@ import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import Sustainability from "./components/Sustainability";
 
-
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Hero />
+      <Element name="hero">
+        <Hero />
+      </Element>
       <main>
-        <section id="about">
+        <Element name="about">
           <About />
-        </section>
-        <section id="sustainabilty">
+        </Element>
+        <Element name="sustainability">
           <Sustainability />
-        </section>
-        <section id="services">
+        </Element>
+        <Element name="services">
           <Services />
-        </section>
-        <section id="gallery">
+        </Element>
+        <Element name="gallery">
           <Gallery />
-        </section>
-        <section id="contact">
+        </Element>
+        <Element name="contact">
           <Contact />
-        </section>
+        </Element>
       </main>
       <Footer />
     </div>

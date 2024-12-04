@@ -41,15 +41,15 @@ export default function Footer() {
   const contactInfo = [
     { 
       icon: <Mail className="w-5 h-5 text-green-600" />, 
-      text: "info@berunicefarms.com" 
+      text: "berunicefarmsgh@gmail.com" 
     },
     { 
       icon: <Phone className="w-5 h-5 text-green-600" />, 
-      text: "+254 123 456 789" 
+      text: "+233 24 786 7923" 
     },
     { 
       icon: <MapPin className="w-5 h-5 text-green-600" />, 
-      text: "Nairobi, Kenya" 
+      text: "New Edubiase, Ashanti Region, Ghana." 
     }
   ];
 
@@ -60,16 +60,28 @@ export default function Footer() {
           {/* Logo and Description */}
           <div>
             <motion.div
-              className="mb-4"
+              className="flex items-center mb-4"
               whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
-              <img 
-                src={beru} 
-                alt="Berunice Farms" 
-                className="h-16 mb-4" 
-              />
+              <ScrollLink
+                to="hero"
+                smooth={true}
+                duration={500}
+                className="flex items-center cursor-pointer"
+              >
+                <img 
+                  src={beru} 
+                  alt="Berunice Farms" 
+                  className="h-12 w-12 mr-3 rounded-full object-cover" 
+                />
+                <span className="text-2xl font-bold text-green-800 tracking-tight">
+                  Berunice
+                  <span className="text-green-600 ml-1">Farms</span>
+                </span>
+              </ScrollLink>
             </motion.div>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600 text-sm ml-16">
               Empowering farmers through innovative, sustainable agricultural solutions.
             </p>
           </div>
@@ -84,9 +96,13 @@ export default function Footer() {
                     to={link.to}
                     smooth={true}
                     duration={500}
-                    className="text-gray-600 hover:text-green-600 cursor-pointer text-sm"
+                    className="text-gray-600 hover:text-green-600 cursor-pointer text-sm 
+                      relative group"
                   >
                     {link.name}
+                    <span className="absolute bottom-[-2px] left-0 w-0 h-[2px] 
+                      bg-green-600 transition-all duration-300 
+                      group-hover:w-full"></span>
                   </ScrollLink>
                 </li>
               ))}
@@ -123,6 +139,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
+                  className="cursor-pointer"
                 >
                   {social.icon}
                 </motion.a>
