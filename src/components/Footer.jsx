@@ -45,7 +45,7 @@ export default function Footer() {
     },
     { 
       icon: <Phone className="w-5 h-5 text-green-700" />, 
-      text: "+233 24 786 7923" 
+      text: "+233 24 786 7923, +233 50 035 555 " 
     },
     { 
       icon: <MapPin className="w-5 h-5 text-green-700" />, 
