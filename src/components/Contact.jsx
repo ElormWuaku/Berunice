@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
-import { Mail, User, MessageCircle } from 'lucide-react';
+import { Mail, User, MessageCircle, Phone } from 'lucide-react';
 import { seedlings } from '../assets'; 
 
-const Contact=() =>{
+const Contact = () => {
   const [formData, setFormData] = useState({
     from_name: '',
     from_email: '',
@@ -13,6 +13,8 @@ const Contact=() =>{
 
   const [statusMessage, setStatusMessage] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const contactNumber = "+233500353555";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -73,6 +75,17 @@ const Contact=() =>{
             <p className="text-gray-800 text-lg leading-relaxed mb-8">
               Have questions or want to learn more? We&apos;d love to hear from you. Fill out the form and our team will get back to you soon.
             </p>
+            
+            {/* Call Button Added */}
+            <motion.a
+              href={`tel:${contactNumber}`}
+              className="w-full flex items-center justify-center bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-500 mb-6"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Phone className="mr-2" size={24} />
+              Call Us Now at {contactNumber}
+            </motion.a>
             
             <div className="text-center mt-8">
               <p className="text-gray-700 italic text-xl">
