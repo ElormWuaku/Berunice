@@ -40,15 +40,15 @@ export default function Footer() {
 
   const contactInfo = [
     { 
-      icon: <Mail className="w-5 h-5 text-green-600" />, 
+      icon: <Mail className="w-5 h-5 text-green-700" />, 
       text: "berunicefarmsgh@gmail.com" 
     },
     { 
-      icon: <Phone className="w-5 h-5 text-green-600" />, 
+      icon: <Phone className="w-5 h-5 text-green-700" />, 
       text: "+233 24 786 7923" 
     },
     { 
-      icon: <MapPin className="w-5 h-5 text-green-600" />, 
+      icon: <MapPin className="w-5 h-5 text-green-700" />, 
       text: "New Edubiase, Ashanti Region, Ghana." 
     }
   ];
@@ -88,7 +88,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-green-600 mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-green-700 mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
@@ -96,12 +96,12 @@ export default function Footer() {
                     to={link.to}
                     smooth={true}
                     duration={500}
-                    className="text-gray-600 hover:text-green-600 cursor-pointer text-sm 
+                    className="text-gray-600 hover:text-green-700 cursor-pointer text-sm 
                       relative group"
                   >
                     {link.name}
                     <span className="absolute bottom-[-2px] left-0 w-0 h-[2px] 
-                      bg-green-600 transition-all duration-300 
+                      bg-green-700 transition-all duration-300 
                       group-hover:w-full"></span>
                   </ScrollLink>
                 </li>
@@ -111,7 +111,7 @@ export default function Footer() {
 
           {/* Contact Information */}
           <div>
-            <h4 className="text-lg font-semibold text-green-600 mb-4">Contact Us</h4>
+            <h4 className="text-lg font-semibold text-green-700 mb-4">Contact Us</h4>
             <ul className="space-y-3">
               {contactInfo.map((contact, index) => (
                 <li 
@@ -129,7 +129,7 @@ export default function Footer() {
 
           {/* Social Media Links */}
           <div>
-            <h4 className="text-lg font-semibold text-green-600 mb-4">Follow Us</h4>
+            <h4 className="text-lg font-semibold text-green-700 mb-4">Follow Us</h4>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <motion.a

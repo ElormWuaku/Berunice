@@ -63,7 +63,7 @@ export default function ModernNavbar() {
                     to={item.to}
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer px-4 py-2 bg-green-600 text-white 
+                    className="cursor-pointer px-4 py-2 bg-[#0F2522] text-white 
                       rounded-full font-medium hover:bg-green-700 
                       transition-colors duration-300 ease-in-out 
                       shadow-md hover:shadow-lg"
@@ -125,7 +125,7 @@ export default function ModernNavbar() {
                     duration={500}
                     onClick={() => setIsOpen(false)}
                     className="block px-3 py-2 text-white 
-                      bg-green-600 hover:bg-green-700 
+                      bg-[#0F2522] hover:bg-green-700 
                       rounded-md transition-colors 
                       duration-200 text-center cursor-pointer"
                   >

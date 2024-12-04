@@ -69,7 +69,7 @@ const Contact=() =>{
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-4xl font-bold text-green-700 mb-6">Get In Touch</h2>
+            <h2 className="text-4xl font-bold text-green-900 mb-6">Get In Touch</h2>
             <p className="text-gray-800 text-lg leading-relaxed mb-8">
               Have questions or want to learn more? We&apos;d love to hear from you. Fill out the form and our team will get back to you soon.
             </p>
@@ -90,7 +90,7 @@ const Contact=() =>{
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="relative">
-                <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-green-600" size={24} />
+                <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-green-700" size={24} />
                 <input
                   type="text"
                   name="from_name"
@@ -98,12 +98,12 @@ const Contact=() =>{
                   value={formData.from_name}
                   onChange={handleChange}
                   required
-                  className="w-full pl-12 pr-3 py-3 border-2 border-green-600/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 text-gray-800"
+                  className="w-full pl-12 pr-3 py-3 border-2 border-green-600/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700 text-gray-800"
                 />
               </div>
               
               <div className="relative">
-                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-green-600" size={24} />
+                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-green-700" size={24} />
                 <input
                   type="email"
                   name="from_email"
@@ -111,12 +111,12 @@ const Contact=() =>{
                   value={formData.from_email}
                   onChange={handleChange}
                   required
-                  className="w-full pl-12 pr-3 py-3 border-2 border-green-600/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 text-gray-800"
+                  className="w-full pl-12 pr-3 py-3 border-2 border-green-600/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700 text-gray-800"
                 />
               </div>
               
               <div className="relative">
-                <MessageCircle className="absolute left-3 top-4 text-green-600" size={24} />
+                <MessageCircle className="absolute left-3 top-4 text-green-700" size={24} />
                 <textarea
                   name="message"
                   placeholder="Your Message"
@@ -124,7 +124,7 @@ const Contact=() =>{
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full pl-12 pr-3 py-3 border-2 border-green-600/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 text-gray-800"
+                  className="w-full pl-12 pr-3 py-3 border-2 border-green-600/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700 text-gray-800"
                 ></textarea>
               </div>
               
@@ -133,7 +133,7 @@ const Contact=() =>{
                 disabled={isSubmitting}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-lg font-semibold"
+                className="w-full bg-green-800 text-white py-3 rounded-lg hover:bg-green-700 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-lg font-semibold"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </motion.button>

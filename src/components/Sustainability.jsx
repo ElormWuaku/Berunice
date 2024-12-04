@@ -41,9 +41,9 @@ const Sustainability = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Column - Branding and Introduction */}
           <div className="bg-white/90 p-8 rounded-lg self-center">
-            <h2 className="text-4xl font-bold text-green-700 mb-6">Sustainable Innovation</h2>
+            <h2 className="text-4xl font-bold text-green-900 mb-6">Sustainable Innovation</h2>
             <p className="text-gray-800 text-lg leading-relaxed mb-8">
-              At <span className="font-semibold text-green-600">Berunice Farms</span>, we&apos;re pioneering a future where technology and nature work in harmony to transform agriculture.
+              At <span className="font-semibold text-green-700">Berunice Farms</span>, we&apos;re pioneering a future where technology and nature work in harmony to transform agriculture.
             </p>
             
             <div className="text-center mt-8">
@@ -66,7 +66,7 @@ const Sustainability = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
                     <span className="text-3xl">{section.icon}</span>
-                    <h3 className="text-2xl font-semibold text-green-600">{section.title}</h3>
+                    <h3 className="text-2xl font-semibold text-green-800">{section.title}</h3>
                   </div>
                   {expandedSection === index ? (
                     <ChevronUpIcon className="w-6 h-6 text-green-600" />

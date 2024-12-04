@@ -55,7 +55,7 @@ const ProductGallery = () => {
     <section className="bg-gray-50 py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-green-700 mb-4">Our Products and Solutions</h2>
+          <h2 className="text-4xl font-bold text-green-900 mb-4">Our Products and Solutions</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Innovative agricultural technologies transforming farming practices
           </p>
@@ -88,7 +88,7 @@ const ProductGallery = () => {
               >
                 <h3 className="text-2xl font-bold text-white mb-2">{item.title}</h3>
                 <p className="text-gray-200 text-sm">{item.description}</p>
-                <span className="mt-2 px-3 py-1 bg-green-600 text-white text-xs rounded-full">
+                <span className="mt-2 px-3 py-1 bg-green-700 text-white text-xs rounded-full">
                   {item.category}
                 </span>
               </motion.div>
