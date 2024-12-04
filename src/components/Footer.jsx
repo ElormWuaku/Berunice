@@ -41,17 +41,25 @@ export default function Footer() {
   const contactInfo = [
     { 
       icon: <Mail className="w-5 h-5 text-green-700" />, 
-      text: "berunicefarmsgh@gmail.com" 
+      text: "berunicefarmsgh@gmail.com",
+      type: 'email'
     },
     { 
       icon: <Phone className="w-5 h-5 text-green-700" />, 
-      text: "+233 24 786 7923, +233 50 035 555 " 
+      text: "+233 24 786 7923, +233 50 035 555",
+      type: 'phone'
     },
     { 
       icon: <MapPin className="w-5 h-5 text-green-700" />, 
-      text: "New Edubiase, Ashanti Region, Ghana." 
+      text: "New Edubiase, Ashanti Region, Ghana.",
+      type: 'location'
     }
   ];
+
+  // Function to clean phone number for tel: link
+  const formatPhoneNumber = (phoneString) => {
+    return phoneString.replace(/\s+/g, '').replace(/[()-]/g, '');
+  };
 
   return (
     <footer className="bg-white bg-opacity-90 backdrop-blur-md">
@@ -118,10 +126,31 @@ export default function Footer() {
                   key={index} 
                   className="flex items-center space-x-3"
                 >
-                  {contact.icon}
-                  <span className="text-gray-600 text-sm">
-                    {contact.text}
-                  </span>
+                  {contact.type === 'phone' ? (
+                    <div className="flex items-center space-x-3">
+                      {contact.icon}
+                      <div className="flex items-center space-x-2">
+                        {contact.text.split(', ').map((number, numberIndex) => (
+                          <motion.a
+                            key={numberIndex}
+                            href={`tel:${formatPhoneNumber(number)}`}
+                            className="text-gray-600 text-sm hover:text-green-700 
+                              transition-colors duration-300 cursor-pointer"
+                            whileHover={{ scale: 1.05 }}
+                          >
+                            {number}
+                          </motion.a>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <>
+                      {contact.icon}
+                      <span className="text-gray-600 text-sm">
+                        {contact.text}
+                      </span>
+                    </>
+                  )}
                 </li>
               ))}
             </ul>
