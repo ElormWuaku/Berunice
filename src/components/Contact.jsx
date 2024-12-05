@@ -73,7 +73,7 @@ const Contact = () => {
           >
             <h2 className="text-4xl font-bold text-green-900 mb-6">Get In Touch</h2>
             <p className="text-gray-800 text-lg leading-relaxed mb-8">
-              Have questions or want to learn more? We&apos;d love to hear from you. Fill out the form and our team will get back to you soon.
+              Have questions or want to learn more? We would love to hear from you. Fill out the form or give us a call and our team will get back to you as soon as possible.
             </p>
             
             {/* Call Button Added */}
