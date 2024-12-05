@@ -42,7 +42,8 @@ export default function Footer() {
     { 
       icon: <Mail className="w-5 h-5 text-green-700" />, 
       text: "berunicefarmsgh@gmail.com",
-      type: 'email'
+      type: 'email',
+      href: "mailto:berunicefarmsgh@gmail.com"
     },
     { 
       icon: <Phone className="w-5 h-5 text-green-700" />, 
@@ -52,7 +53,8 @@ export default function Footer() {
     { 
       icon: <MapPin className="w-5 h-5 text-green-700" />, 
       text: "New Edubiase, Ashanti Region, Ghana.",
-      type: 'location'
+      type: 'location',
+      href: "https://maps.google.com/maps?q=New+Edubiase,+Ashanti+Region,+Ghana"
     }
   ];
 
@@ -144,12 +146,17 @@ export default function Footer() {
                       </div>
                     </div>
                   ) : (
-                    <>
+                    <motion.a
+                      href={contact.href}
+                      target={contact.type === 'location' ? '_blank' : '_self'}
+                      rel={contact.type === 'location' ? 'noopener noreferrer' : undefined}
+                      className="flex items-center space-x-3 text-gray-600 text-sm 
+                        hover:text-green-700 transition-colors duration-300 cursor-pointer"
+                      whileHover={{ scale: 1.05 }}
+                    >
                       {contact.icon}
-                      <span className="text-gray-600 text-sm">
-                        {contact.text}
-                      </span>
-                    </>
+                      <span>{contact.text}</span>
+                    </motion.a>
                   )}
                 </li>
               ))}
