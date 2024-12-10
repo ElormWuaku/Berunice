@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { Link as ScrollLink } from 'react-scroll';
 import { 
   Facebook, 
-  Twitter, 
   Instagram, 
   Linkedin, 
   Mail, 
@@ -15,19 +14,16 @@ export default function Footer() {
   const socialLinks = [
     { 
       icon: <Facebook className="w-6 h-6 text-blue-600 hover:text-blue-700" />, 
-      href: "https://facebook.com/berunicefarms" 
+      href: "https://www.facebook.com/share/1EyMj24AQS/" 
     },
-    { 
-      icon: <Twitter className="w-6 h-6 text-blue-400 hover:text-blue-500" />, 
-      href: "https://twitter.com/berunicefarms" 
-    },
+ 
     { 
       icon: <Instagram className="w-6 h-6 text-pink-600 hover:text-pink-700" />, 
-      href: "https://instagram.com/berunicefarms" 
+      href: "https://www.instagram.com/berunice_farms/profilecard/?igsh=bGMwMHFyNmc2NzJs" 
     },
     { 
       icon: <Linkedin className="w-6 h-6 text-blue-800 hover:text-blue-900" />, 
-      href: "https://linkedin.com/company/berunicefarms" 
+      href: "https://www.linkedin.com/company/berunice-farms-gh/" 
     }
   ];
 
