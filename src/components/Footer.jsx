@@ -14,7 +14,7 @@ export default function Footer() {
   const socialLinks = [
     { 
       icon: <Facebook className="w-6 h-6 text-blue-600 hover:text-blue-700" />, 
-      href: "https://www.facebook.com/share/1EyMj24AQS/" 
+      href: "https://www.facebook.com/share/181dy96FyW/" 
     },
  
     { 
